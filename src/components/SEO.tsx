@@ -8,8 +8,8 @@ interface SEOProps {
 }
 
 const SEO = ({ 
-  title = 'AONJI - Digital Transformation & Software Development',
-  description = 'Creating AONJI for complex challenges. We transform businesses through innovative technology and strategic thinking.',
+  title = 'SOLUTIONS - Digital Transformation & Software Development',
+  description = 'Creating SOLUTIONS for complex challenges. We transform businesses through innovative technology and strategic thinking.',
   keywords = 'digital transformation, software development, cloud solutions, data analytics, UI/UX design, DevOps',
   ogImage = '/og-image.jpg'
 }: SEOProps) => {

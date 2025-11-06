@@ -194,7 +194,7 @@ RATE_LIMIT_MAX_REQUESTS=100
 
 ### Quick Deploy to Vercel (Frontend)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/abd12123/Aonji)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/abd12123/Solutions)
 
 #### Option 1: Vercel Dashboard (Recommended)
 
@@ -206,7 +206,7 @@ RATE_LIMIT_MAX_REQUESTS=100
 2. **Import to Vercel**
    - Go to [vercel.com](https://vercel.com)
    - Click "New Project"
-   - Import `abd12123/Aonji` repository
+   - Import `abd12123/Solutions` repository
    
 3. **Configure Build Settings**
    - Framework Preset: **Vite**

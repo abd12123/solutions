@@ -121,8 +121,8 @@ const About = () => {
   return (
     <>
       <SEO 
-        title="About Us - AONJI"
-        description="Learn about AONJI, our mission, values, and the team behind our success."
+        title="About Us - SOLUTIONS"
+        description="Learn about SOLUTIONS, our mission, values, and the team behind our success."
       />
 
       {/* Hero Section */}
@@ -143,7 +143,7 @@ const About = () => {
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
               Since 2008, we've been helping organizations navigate the digital landscape 
-              and achieve extraordinary results through AONJI.
+              and achieve extraordinary results through SOLUTIONS.
             </p>
           </motion.div>
         </div>

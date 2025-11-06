@@ -14,7 +14,7 @@ This repository is configured and ready for Vercel deployment.
 
 2. **Import Repository**
    - Click "Import Git Repository"
-   - Select `abd12123/Aonji`
+   - Select `abd12123/Solutions`
    - Click "Import"
 
 3. **Configure Project**
@@ -42,7 +42,7 @@ This repository is configured and ready for Vercel deployment.
    - Your site will be live!
 
 6. **Update Environment Variable**
-   - After deployment, copy your Vercel URL (e.g., `https://aonji.vercel.app`)
+   - After deployment, copy your Vercel URL (e.g., `https://solutions.vercel.app`)
    - Go to Project Settings → Environment Variables
    - Update `VITE_SITE_URL` with your actual URL
    - Redeploy (Settings → Deployments → Redeploy)
@@ -160,4 +160,4 @@ Once connected, Vercel will automatically deploy:
 
 ---
 
-**Ready to deploy?** Click here: [Deploy to Vercel](https://vercel.com/new/clone?repository-url=https://github.com/abd12123/Aonji)
+**Ready to deploy?** Click here: [Deploy to Vercel](https://vercel.com/new/clone?repository-url=https://github.com/abd12123/Solutions)

@@ -251,7 +251,7 @@ const Portfolio = () => {
   return (
     <>
       <SEO 
-        title="Portfolio - AONJI"
+        title="Portfolio - SOLUTIONS"
         description="Explore our portfolio of successful digital transformation and software development projects across various industries."
       />
 
