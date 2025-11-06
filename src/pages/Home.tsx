@@ -310,7 +310,7 @@ const Home = () => {
                 <motion.div
                   key={item.title}
                   whileHover={{ scale: 1.05 }}
-                  className="bg-white rounded-xl shadow-lg p-6 text-center"
+                  className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 text-center"
                 >
                   <div className={`w-16 h-16 bg-gradient-to-br ${item.color} rounded-lg flex items-center justify-center mx-auto mb-4`}>
                     <item.icon className="w-8 h-8 text-white" />

@@ -292,7 +292,7 @@ const Portfolio = () => {
                 className={`px-6 py-2 rounded-full font-medium transition-all ${
                   selectedFilter === filter.id
                     ? 'bg-primary-600 text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                 }`}
               >
                 {filter.label}
@@ -327,7 +327,7 @@ const Portfolio = () => {
 
           {filteredProjects.length === 0 && (
             <div className="text-center py-16">
-              <p className="text-gray-600 text-lg">No projects found in this category.</p>
+              <p className="text-gray-600 dark:text-gray-400 text-lg">No projects found in this category.</p>
             </div>
           )}
         </div>
@@ -347,15 +347,15 @@ const Portfolio = () => {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+              className="bg-white dark:bg-gray-900 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Modal Header */}
-              <div className="sticky top-0 bg-white border-b px-6 py-4 flex items-center justify-between z-10">
-                <h2 className="heading-sm text-navy-900">{selectedProject.title}</h2>
+              <div className="sticky top-0 bg-white dark:bg-gray-900 border-b dark:border-gray-700 px-6 py-4 flex items-center justify-between z-10">
+                <h2 className="heading-sm text-navy-900 dark:text-gray-100">{selectedProject.title}</h2>
                 <button
                   onClick={() => setSelectedProject(null)}
-                  className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                  className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors text-gray-900 dark:text-gray-100"
                 >
                   <X className="w-6 h-6" />
                 </button>
@@ -373,83 +373,83 @@ const Portfolio = () => {
                 {/* Project Info */}
                 <div className="grid md:grid-cols-3 gap-4">
                   <div className="flex items-center space-x-3">
-                    <Calendar className="w-5 h-5 text-primary-600" />
+                    <Calendar className="w-5 h-5 text-primary-600 dark:text-primary-400" />
                     <div>
-                      <div className="text-sm text-gray-600">Duration</div>
-                      <div className="font-semibold">{selectedProject.duration}</div>
+                      <div className="text-sm text-gray-600 dark:text-gray-400">Duration</div>
+                      <div className="font-semibold text-gray-900 dark:text-gray-100">{selectedProject.duration}</div>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Users className="w-5 h-5 text-primary-600" />
+                    <Users className="w-5 h-5 text-primary-600 dark:text-primary-400" />
                     <div>
-                      <div className="text-sm text-gray-600">Team Size</div>
-                      <div className="font-semibold">{selectedProject.teamSize} members</div>
+                      <div className="text-sm text-gray-600 dark:text-gray-400">Team Size</div>
+                      <div className="font-semibold text-gray-900 dark:text-gray-100">{selectedProject.teamSize} members</div>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <TrendingUp className="w-5 h-5 text-primary-600" />
+                    <TrendingUp className="w-5 h-5 text-primary-600 dark:text-primary-400" />
                     <div>
-                      <div className="text-sm text-gray-600">Year</div>
-                      <div className="font-semibold">{selectedProject.year}</div>
+                      <div className="text-sm text-gray-600 dark:text-gray-400">Year</div>
+                      <div className="font-semibold text-gray-900 dark:text-gray-100">{selectedProject.year}</div>
                     </div>
                   </div>
                 </div>
 
                 {/* Client & Industry */}
                 <div>
-                  <h3 className="heading-sm mb-2 text-navy-900">Client</h3>
-                  <p className="text-gray-700">{selectedProject.client} • {selectedProject.industry.charAt(0).toUpperCase() + selectedProject.industry.slice(1)}</p>
+                  <h3 className="heading-sm mb-2 text-navy-900 dark:text-gray-100">Client</h3>
+                  <p className="text-gray-700 dark:text-gray-300">{selectedProject.client} • {selectedProject.industry.charAt(0).toUpperCase() + selectedProject.industry.slice(1)}</p>
                 </div>
 
                 {/* Challenge */}
                 <div>
-                  <h3 className="heading-sm mb-2 text-navy-900">The Challenge</h3>
-                  <p className="text-gray-700 leading-relaxed">{selectedProject.challenge}</p>
+                  <h3 className="heading-sm mb-2 text-navy-900 dark:text-gray-100">The Challenge</h3>
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{selectedProject.challenge}</p>
                 </div>
 
                 {/* Solution */}
                 <div>
-                  <h3 className="heading-sm mb-2 text-navy-900">Our Solution</h3>
-                  <p className="text-gray-700 leading-relaxed">{selectedProject.solution}</p>
+                  <h3 className="heading-sm mb-2 text-navy-900 dark:text-gray-100">Our Solution</h3>
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{selectedProject.solution}</p>
                 </div>
 
                 {/* Results */}
                 <div>
-                  <h3 className="heading-sm mb-4 text-navy-900">Results & Impact</h3>
+                  <h3 className="heading-sm mb-4 text-navy-900 dark:text-gray-100">Results & Impact</h3>
                   <div className="grid md:grid-cols-2 gap-4">
                     {selectedProject.results.map((result) => (
-                      <div key={result.metric} className="card bg-primary-50 border-primary-100">
-                        <div className="text-2xl font-bold text-primary-600 mb-1">
+                      <div key={result.metric} className="card bg-primary-50 dark:bg-primary-900/30 border-primary-100 dark:border-primary-800">
+                        <div className="text-2xl font-bold text-primary-600 dark:text-primary-400 mb-1">
                           {result.value}
                         </div>
-                        <div className="text-sm text-gray-700">{result.metric}</div>
+                        <div className="text-sm text-gray-700 dark:text-gray-300">{result.metric}</div>
                       </div>
                     ))}
                   </div>
                 </div>
 
                 {/* Testimonial */}
-                <div className="card bg-gray-50">
-                  <p className="text-gray-700 italic mb-4">"{selectedProject.testimonial.text}"</p>
+                <div className="card bg-gray-50 dark:bg-gray-800">
+                  <p className="text-gray-700 dark:text-gray-300 italic mb-4">"{selectedProject.testimonial.text}"</p>
                   <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center text-white font-bold">
+                    <div className="w-12 h-12 bg-primary-600 dark:bg-primary-500 rounded-full flex items-center justify-center text-white font-bold">
                       {selectedProject.testimonial.author.charAt(0)}
                     </div>
                     <div>
-                      <div className="font-semibold text-navy-900">{selectedProject.testimonial.author}</div>
-                      <div className="text-sm text-gray-600">{selectedProject.testimonial.position}</div>
+                      <div className="font-semibold text-navy-900 dark:text-gray-100">{selectedProject.testimonial.author}</div>
+                      <div className="text-sm text-gray-600 dark:text-gray-400">{selectedProject.testimonial.position}</div>
                     </div>
                   </div>
                 </div>
 
                 {/* Technologies */}
                 <div>
-                  <h3 className="heading-sm mb-3 text-navy-900">Technologies Used</h3>
+                  <h3 className="heading-sm mb-3 text-navy-900 dark:text-gray-100">Technologies Used</h3>
                   <div className="flex flex-wrap gap-2">
                     {selectedProject.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-4 py-2 bg-primary-50 text-primary-700 rounded-lg text-sm font-medium"
+                        className="px-4 py-2 bg-primary-50 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-lg text-sm font-medium"
                       >
                         {tech}
                       </span>

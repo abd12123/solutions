@@ -249,7 +249,7 @@ const Services = () => {
         <section
           key={service.id}
           id={service.id}
-          className={`section-padding ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}
+          className={`section-padding ${index % 2 === 0 ? 'bg-gray-50 dark:bg-gray-800' : 'bg-white dark:bg-gray-900'}`}
         >
           <div className="container-custom">
             <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -309,7 +309,7 @@ const Services = () => {
                     {service.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-4 py-2 bg-primary-50 text-primary-700 rounded-lg text-sm font-medium"
+                        className="px-4 py-2 bg-primary-50 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-lg text-sm font-medium"
                       >
                         {tech}
                       </span>
@@ -377,10 +377,10 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="heading-lg mb-6 text-navy-900">
+            <h2 className="heading-lg mb-6 text-navy-900 dark:text-gray-100">
               Ready to Get Started?
             </h2>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
               Let's discuss how our services can help you achieve your business goals.
             </p>
             <Link to="/contact" className="btn-primary text-lg px-8 py-4">

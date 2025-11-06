@@ -29,21 +29,21 @@ const PortfolioCard = ({ title, client, industry, image, technologies, onClick }
       </div>
       
       <div className="p-6 flex-grow flex flex-col">
-        <span className="text-sm text-primary-600 font-medium mb-2">{industry}</span>
-        <h3 className="heading-sm mb-2 text-navy-900">{title}</h3>
-        <p className="text-gray-600 mb-4">{client}</p>
+        <span className="text-sm text-primary-600 dark:text-primary-400 font-medium mb-2">{industry}</span>
+        <h3 className="heading-sm mb-2 text-navy-900 dark:text-gray-100">{title}</h3>
+        <p className="text-gray-600 dark:text-gray-400 mb-4">{client}</p>
         
         <div className="flex flex-wrap gap-2 mt-auto">
           {technologies.slice(0, 3).map((tech) => (
             <span
               key={tech}
-              className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full"
+              className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs rounded-full"
             >
               {tech}
             </span>
           ))}
           {technologies.length > 3 && (
-            <span className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">
+            <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs rounded-full">
               +{technologies.length - 3}
             </span>
           )}

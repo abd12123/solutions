@@ -139,18 +139,18 @@ const Contact = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="heading-md mb-6 text-navy-900">Send Us a Message</h2>
+              <h2 className="heading-md mb-6 text-navy-900 dark:text-gray-100">Send Us a Message</h2>
               
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Full Name *
                   </label>
                   <input
                     {...register('name')}
                     type="text"
                     id="name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-colors bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
                     placeholder="John Doe"
                   />
                   {errors.name && (
@@ -159,14 +159,14 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Email Address *
                   </label>
                   <input
                     {...register('email')}
                     type="email"
                     id="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-colors bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
                     placeholder="john@company.com"
                   />
                   {errors.email && (
@@ -175,14 +175,14 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="company" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Company Name *
                   </label>
                   <input
                     {...register('company')}
                     type="text"
                     id="company"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-colors bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
                     placeholder="Your Company"
                   />
                   {errors.company && (
@@ -191,13 +191,13 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="serviceInterest" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="serviceInterest" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Service Interest *
                   </label>
                   <select
                     {...register('serviceInterest')}
                     id="serviceInterest"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-colors bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
                   >
                     <option value="">Select a service...</option>
                     <option value="digital-transformation">Digital Transformation</option>
@@ -214,14 +214,14 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Message *
                   </label>
                   <textarea
                     {...register('message')}
                     id="message"
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-colors bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
                     placeholder="Tell us about your project..."
                   />
                   {errors.message && (
@@ -281,8 +281,8 @@ const Contact = () => {
               className="space-y-8"
             >
               <div>
-                <h2 className="heading-md mb-6 text-navy-900">Get In Touch</h2>
-                <p className="text-gray-600 mb-8 leading-relaxed">
+                <h2 className="heading-md mb-6 text-navy-900 dark:text-gray-100">Get In Touch</h2>
+                <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
                   Have a question or ready to start a project? We're here to help. 
                   Reach out through any of our offices or use the contact form.
                 </p>
@@ -293,9 +293,9 @@ const Contact = () => {
                       <Mail className="w-6 h-6 text-primary-600" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-navy-900 mb-1">Email Us</h3>
-                      <p className="text-gray-600">contact@optimalsolutions.com</p>
-                      <p className="text-gray-600">support@optimalsolutions.com</p>
+                      <h3 className="font-semibold text-navy-900 dark:text-gray-100 mb-1">Email Us</h3>
+                      <p className="text-gray-600 dark:text-gray-400">contact@optimalsolutions.com</p>
+                      <p className="text-gray-600 dark:text-gray-400">support@optimalsolutions.com</p>
                     </div>
                   </div>
 
@@ -304,9 +304,9 @@ const Contact = () => {
                       <Phone className="w-6 h-6 text-primary-600" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-navy-900 mb-1">Call Us</h3>
-                      <p className="text-gray-600">+1 (555) 123-4567</p>
-                      <p className="text-gray-600">+44 20 1234 5678</p>
+                      <h3 className="font-semibold text-navy-900 dark:text-gray-100 mb-1">Call Us</h3>
+                      <p className="text-gray-600 dark:text-gray-400">+1 (555) 123-4567</p>
+                      <p className="text-gray-600 dark:text-gray-400">+44 20 1234 5678</p>
                     </div>
                   </div>
 
@@ -315,9 +315,9 @@ const Contact = () => {
                       <Clock className="w-6 h-6 text-primary-600" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-navy-900 mb-1">Business Hours</h3>
-                      <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                      <p className="text-gray-600">Saturday - Sunday: Closed</p>
+                      <h3 className="font-semibold text-navy-900 dark:text-gray-100 mb-1">Business Hours</h3>
+                      <p className="text-gray-600 dark:text-gray-400">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                      <p className="text-gray-600 dark:text-gray-400">Saturday - Sunday: Closed</p>
                     </div>
                   </div>
                 </div>
@@ -349,8 +349,8 @@ const Contact = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="heading-lg mb-4 text-navy-900">Our Offices</h2>
-            <p className="text-xl text-gray-600">Visit us at any of our global locations</p>
+            <h2 className="heading-lg mb-4 text-navy-900 dark:text-gray-100">Our Offices</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400">Visit us at any of our global locations</p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -364,12 +364,12 @@ const Contact = () => {
                 className="card"
               >
                 <MapPin className="w-8 h-8 text-primary-600 mb-4" />
-                <h3 className="heading-sm mb-4 text-navy-900">{office.city}</h3>
-                <div className="space-y-2 text-gray-600">
+                <h3 className="heading-sm mb-4 text-navy-900 dark:text-gray-100">{office.city}</h3>
+                <div className="space-y-2 text-gray-600 dark:text-gray-400">
                   <p>{office.address}</p>
                   <p>{office.address2}</p>
-                  <p className="pt-2 font-medium text-primary-600">{office.phone}</p>
-                  <p className="text-primary-600">{office.email}</p>
+                  <p className="pt-2 font-medium text-primary-600 dark:text-primary-400">{office.phone}</p>
+                  <p className="text-primary-600 dark:text-primary-400">{office.email}</p>
                 </div>
               </motion.div>
             ))}
@@ -386,8 +386,8 @@ const Contact = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="heading-lg mb-4 text-navy-900">Frequently Asked Questions</h2>
-            <p className="text-xl text-gray-600">Quick answers to common questions</p>
+            <h2 className="heading-lg mb-4 text-navy-900 dark:text-gray-100">Frequently Asked Questions</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400">Quick answers to common questions</p>
           </motion.div>
 
           <div className="max-w-3xl mx-auto space-y-4">
@@ -400,8 +400,8 @@ const Contact = () => {
                 transition={{ delay: index * 0.1 }}
                 className="card"
               >
-                <h3 className="font-semibold text-navy-900 mb-2">{faq.question}</h3>
-                <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                <h3 className="font-semibold text-navy-900 dark:text-gray-100 mb-2">{faq.question}</h3>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">{faq.answer}</p>
               </motion.div>
             ))}
           </div>
